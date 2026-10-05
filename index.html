@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mobilidade Urbana e Transporte Público no Brasil</title>
+<style>
+:root{--bg:#f7f8fa;--card:#fff;--tx:#1d2733;--mut:#5b6775;--ac:#0b6e99;--bd:#e3e7ec}
+@media(prefers-color-scheme:dark){:root{--bg:#10151b;--card:#18202a;--tx:#e8edf2;--mut:#9aa7b4;--ac:#5cb8e0;--bd:#2a3541}}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6}
+header{background:var(--ac);color:#fff;padding:56px 20px;text-align:center}
+header h1{margin:0 0 8px;font-size:clamp(1.6rem,4vw,2.4rem)}header p{margin:0;opacity:.9}
+main{max-width:1000px;margin:0 auto;padding:24px 16px}
+section{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:22px;margin:18px 0}
+h2{margin-top:0;color:var(--ac)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.kpi{border:1px solid var(--bd);border-radius:10px;padding:14px}.kpi b{display:block;font-size:1.35rem}.kpi span{color:var(--mut);font-size:.85rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+figure{margin:0}img{max-width:100%;border-radius:8px;border:1px solid var(--bd);background:#fff}figcaption{color:var(--mut);font-size:.85rem;margin-top:4px}
+.btns a{display:inline-block;margin:4px 8px 4px 0;padding:10px 18px;border-radius:8px;background:var(--ac);color:#fff;text-decoration:none;font-weight:600}
+.btns a.alt{background:transparent;color:var(--ac);border:1px solid var(--ac)}
+.tags span{display:inline-block;background:var(--bg);border:1px solid var(--bd);border-radius:20px;padding:2px 12px;margin:3px;font-size:.85rem}
+footer{text-align:center;color:var(--mut);padding:24px;font-size:.85rem}
+</style>
+</head>
+<body>
+<header>
+<h1>🚌 Mobilidade Urbana e Transporte Público no Brasil</h1>
+<p>Análise e visualização de dados, 2015–2024 · Avaliação G1 · Linguagem de Programação</p>
+</header>
+<main>
+<section>
+<h2>O problema</h2>
+<p>A mobilidade urbana afeta a qualidade de vida, a produtividade e o meio ambiente. Este projeto analisa um dataset simulado de 37 cidades brasileiras, com 6 meios de transporte e 120 meses de observações, para investigar fluxo de passageiros, tempo de deslocamento, congestionamento e emissões.</p>
+<div class="btns">
+<a href="https://SEU-APP.streamlit.app" target="_blank" rel="noopener">Abrir dashboard</a>
+<a class="alt" href="https://github.com/SEU-USUARIO/projeto-mobilidade-urbana" target="_blank" rel="noopener">Código no GitHub</a>
+</div>
+</section>
+
+<section>
+<h2>Perguntas orientadoras</h2>
+<ul>
+<li>Quais cidades possuem maior fluxo de passageiros?</li>
+<li>Quais períodos apresentam maior congestionamento?</li>
+<li>Qual meio de transporte é mais utilizado?</li>
+<li>O tempo médio de deslocamento aumentou ao longo do tempo?</li>
+<li>Existem diferenças regionais relevantes?</li>
+<li>Há relação entre passageiros e tempo de deslocamento?</li>
+<li>Quais regiões apresentam maior pressão sobre o sistema de mobilidade?</li>
+</ul>
+</section>
+
+<section>
+<h2>Principais indicadores</h2>
+<div class="kpis">
+<div class="kpi"><b>4,45 bilhões</b><span>Passageiros no período</span></div>
+<div class="kpi"><b>Rio de Janeiro</b><span>Cidade mais movimentada</span></div>
+<div class="kpi"><b>Metrô</b><span>Meio predominante</span></div>
+<div class="kpi"><b>54,3 min</b><span>Tempo médio de deslocamento</span></div>
+<div class="kpi"><b>R$ 5,76</b><span>Tarifa média</span></div>
+<div class="kpi"><b>2,47 / 4</b><span>Congestionamento médio</span></div>
+</div>
+</section>
+
+<section>
+<h2>Visualizações</h2>
+<div class="grid">
+<figure><img src="imagens/01_evolucao_passageiros.png" alt="Evolução de passageiros"><figcaption>Evolução mensal e média móvel de 12 meses</figcaption></figure>
+<figure><img src="imagens/02_tempo_por_ano.png" alt="Tempo de deslocamento por ano"><figcaption>Tempo médio de deslocamento por ano</figcaption></figure>
+<figure><img src="imagens/03_regioes.png" alt="Regiões"><figcaption>Comparação entre regiões</figcaption></figure>
+<figure><img src="imagens/04_top_cidades.png" alt="Top cidades"><figcaption>Top 10 cidades</figcaption></figure>
+<figure><img src="imagens/05_modais.png" alt="Modais"><figcaption>Comparação entre meios de transporte</figcaption></figure>
+<figure><img src="imagens/06_heatmap_congestionamento.png" alt="Heatmap"><figcaption>Congestionamento por ano e mês</figcaption></figure>
+<figure><img src="imagens/07_dispersao.png" alt="Dispersão"><figcaption>Passageiros × tempo de deslocamento</figcaption></figure>
+<figure><img src="imagens/08_correlacao.png" alt="Correlação"><figcaption>Matriz de correlação</figcaption></figure>
+</div>
+</section>
+
+<section>
+<h2>O que os dados mostram</h2>
+<ul>
+<li>Cidades e modais têm totais muito próximos: o líder se destaca por margem pequena.</li>
+<li>O tempo médio de deslocamento oscila entre 53 e 56 minutos, sem tendência de aumento.</li>
+<li>Por cidade, as regiões ficam entre 119 e 125 milhões de passageiros; a diferença nos totais vem do número de cidades por região.</li>
+<li>As correlações entre as variáveis numéricas são próximas de zero, inclusive entre passageiros e tempo de deslocamento.</li>
+</ul>
+<p><b>Conclusão:</b> como o dataset é simulado, os resultados servem como exercício metodológico. Para identificar gargalos reais, seria preciso incluir população, horário do dia e fontes oficiais (IBGE, ANTP).</p>
+</section>
+
+<section>
+<h2>Arquivos do projeto</h2>
+<div class="btns">
+<a class="alt" href="README.md">Ver README</a>
+<a class="alt" href="notebooks/analise_mobilidade_urbana.ipynb">Ver Notebook</a>
+<a class="alt" href="dados/simulacao_mobilidade_urbana_brasil.csv">Baixar base de dados</a>
+</div>
+</section>
+
+<section>
+<h2>Tecnologias</h2>
+<div class="tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Plotly</span><span>Streamlit</span><span>SQLAlchemy + SQLite</span><span>GitHub Pages</span></div>
+</section>
+</main>
+<footer>Projeto acadêmico · Dados simulados fornecidos pelo professor</footer>
+</body>
+</html>
