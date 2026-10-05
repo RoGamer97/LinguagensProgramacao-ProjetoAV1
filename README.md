@@ -2,6 +2,8 @@
 
 Projeto da Avaliação G1 - Linguagem de Programação: Análise e Visualização de Dados com Python.
 
+Professor Alexandre Neves Louzada, UniLasalle RJ.
+
 - **Dashboard:** https://ro-louzas.streamlit.app/
 - **Notebook:** `notebooks/analise_mobilidade_urbana.ipynb`
 
