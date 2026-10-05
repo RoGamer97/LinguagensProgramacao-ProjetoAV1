@@ -5,6 +5,7 @@ Projeto da Avaliação G1 - Linguagem de Programação: Análise e Visualizaçã
 Professor Alexandre Neves Louzada, UniLasalle RJ.
 
 - **Dashboard:** https://ro-louzas.streamlit.app/
+- **GitHub Pages** https://rogamer97.github.io/LinguagensProgramacao-ProjetoAV1/
 - **Notebook:** `notebooks/analise_mobilidade_urbana.ipynb`
 
 ## Problema
