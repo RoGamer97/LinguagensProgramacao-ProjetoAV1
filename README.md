@@ -1,4 +1,4 @@
-# 🚌 Mobilidade Urbana e Transporte Público no Brasil (2015–2024)
+# Mobilidade Urbana e Transporte Público no Brasil (2015 - 2024)
 
 Projeto da Avaliação G1 - Linguagem de Programação: Análise e Visualização de Dados com Python.
 
@@ -9,7 +9,7 @@ Projeto da Avaliação G1 - Linguagem de Programação: Análise e Visualizaçã
 Investigar padrões de mobilidade urbana: fluxo de passageiros, tempo de deslocamento, congestionamento, comparação entre regiões, cidades e meios de transporte, e emissões de CO₂.
 
 ## Base de dados
-`dados/simulacao_mobilidade_urbana_brasil.csv` — 4.440 registros (mês × cidade × meio de transporte), 37 cidades, 6 meios de transporte, 2015–2024. Dataset **simulado**; não contém hora do dia nem população.
+`dados/simulacao_mobilidade_urbana_brasil.csv` - 4.440 registros (mês × cidade × meio de transporte), 37 cidades, 6 meios de transporte, 2015–2024. Dataset **simulado**; não contém hora do dia nem população.
 
 ## Funcionalidades
 - **Intermediárias:** filtros múltiplos, KPIs dinâmicos, gráficos interativos (Plotly), análise temporal, dashboard em seções (abas), visualizações comparativas.
